@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event reservation!</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <section class="header">  
+        <nav>
+            <ul class="navlist">
+                <li><a href="homepage.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="Rooms.html" class="drop">Rooms<i class="arrow down"></i></a>
+                    <div class="dropdownmenu">                       
+                        <a href="Rooms.html">Room</a>                           
+                        <a href="RoomBooking.html">Rooms Bookings</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="facilities.html" class="drop">Facilities<i class="arrow down"></i></a>
+                    <div class="dropdownmenu">
+                        <a href="facilities.html">Facilities</a>
+                        <a href="facilities_booking.html">Facilities Bookings</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="foodbev.html" class="drop">Restaurant<i class="arrow down"></i></a>
+                    <div class="dropdownmenu">
+                        <a href="foodbev.html">Food and Beverages</a>
+                        <a href="restaurantreserve.html">Restaurant Reservation</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="eventreservation.html" class="drop">Events<i class="arrow down"></i></a>
+                    <div class="dropdownmenu">
+                        <a href="eventreservation.html">Events Reservation</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>   
+        
+        <div class="text-box">           
+            <p class="imagetext1">Weddings & Birthdays</p>           
+            <p><span class="imagetext3">Celebrate life's most cherished moments amidst the breathtaking
+                 beauty of the Maldives at our eco-friendly</br> hotel - where love and sustainability intertwine in perfect harmony.
+            </span></p> 
+        </div>
+</section>
+
+<section>
+    <div class="welcome">Celebrate your occasion with us</div>
+    <p class="quote1">Host your event at EcoRetreat</p>
+    <p class="quote2"><span>Elevate your special occasions with unparalleled beauty and sustainability at our eco-friendly hotel in the Maldives.</span></br>
+        <span>From weddings to birthdays, immerse yourself in luxurious surroundings while contributing to a</span></br>
+        <span>greener world, creating unforgettable memories with a conscience.</span></p>
+</section>
+
+<section class="events">
+    <div class="content3">
+        <p>Events</p>
+        <h3>Weddings & Birthdays at EcoRetreat</h3>
+        <p>Whether it's a dream wedding or a memorable birthday, 
+            we offer breathtaking ocean views, 
+             exquisite dining, and personalized services to make your 
+             celebration unforgettable. Book now and create memories that will 
+             last a lifetime in the serene beauty of the Maldives!</p>
+    </div>
+    <div class="eventimage">
+        <img src="couple.jpg"/>
+    </div>
+</section>
+
+<section>
+    <div class="Rform">
+        <form>
+        <table class="tablestyle">
+                <tr>
+                    <td height="40" valign="bottom">Full Name :</td>
+                    <td valign="bottom">Phone Number :</td>
+                </tr>
+          
+                <tr>
+                    <td height="40">
+                        <input type="text" name="fullName" value="" class="fullName" 
+                     required="required" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;First Name"/>
+                    </td>
+                    <td>
+                        <input type="number" name="pnumber" value="" class="pnumber" maxlength="8"
+                     required="required" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;Enter your Phone Number"/>
+                    </td>
+                </tr>
+          
+                <tr>
+            <td height="40" colspan="2" valign="bottom">Email :</td>
+          </tr>
+          <tr>
+            <td colspan="2">
+                            <input type="email" name="email" value="" class="email" 
+                       required="required" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;e.g. tommywee123@gmailcom"/>
+                    </td>
+                </tr>
+          
+          <tr>
+                        <td height="40" valign="bottom">Event Type :</td>
+            <td height="40" valign="bottom">No. of People :</td>
+                </tr>
+                <tr>
+                    <td>
+                        <select name="eventtype" class="eventtype" required="required">
+                            <option disabled selected value="Choice of Event">&nbsp;&nbsp;&nbsp;&nbsp;Choice of Event</option>
+                            <option value="wedding">&nbsp;&nbsp;&nbsp;&nbsp;Weddings</option>
+                            <option value="birthday">&nbsp;&nbsp;&nbsp;&nbsp;Birthdays</option>
+                        </select>
+                    </td>
+            <td>
+              <select name="people" class="people" required="required">
+                            <option disabled selected value="How many people are attending?">&nbsp;&nbsp;&nbsp;How many people are attending?</option>
+                            <option value="wedding">&nbsp;&nbsp;&nbsp;10-20 pax</option>
+                            <option value="birthday">&nbsp;&nbsp;&nbsp;20-30 pax</option>
+                            <option value="meeting">&nbsp;&nbsp;&nbsp;30-40 pax</option>
+                        </select>
+            </td>
+                </tr>
+          
+          <tr>
+            <td height="40" valign="bottom">Date of Events :</td>
+            <td height="40" valign="bottom">Title :</td>
+          </tr>
+          
+          <tr>
+            <td>
+              <input type="date" required="required" class="calendar"/>
+            </td>
+            <td class="radio-container">
+               <label for="Male">
+                    <input type="radio" id="genderMale" name="gender" value="male" required>Mr
+                </label>
+                <label for="Female1">
+                    <input type="radio" id="genderFemale" name="gender" value="female" required>Ms
+                </label>
+                <label for="Female2">
+                    <input type="radio" id="genderOther" name="gender" value="other" required>Mrs
+              </label>
+              <label for="Female3">
+                    <input type="radio" id="genderOther" name="gender" value="other" required>Miss
+              </label>
+            </td>
+          </tr>
+       
+                <tr>
+                    <td height="40" valign="bottom" colspan="2">Comments :</td>
+                </tr>
+                <tr>
+                    <td height="115" colspan="2">
+                        <textarea rows="5" required name="details" 
+                        placeholder="&nbsp;&nbsp;Type Here..." 
+                        class="donoDetails" rows="10"></textarea>
+                    </td>
+                </tr>
+          
+                <tr>
+            <td class="buttonPosition">
+                <input type="reset" value="Clear" class="button1"/>
+            </td>
+            <td>
+                <input type="submit" value="Submit" class="button2"/>
+                </td>
+                </tr>
+          
+            </table>
+        </form>
+    </div>
+</section>
+<footer class="erfooter">
+    <div class="container1">
+        <div class="row1">
+            <h3>EcoRetreat</h3>
+            <p>"Our vision is to create an unparalleled eco-friendly sanctuary in the Maldives,
+                 where luxury meets sustainability."</p>
+        </div>
+        <div class="line"><div>
+            <div class="copyright-container">
+            <p class="copyright-text">Copyright &copy; 
+                2024 All Rights Reserved by EcoRetreat</p>
+            </div>
+        </div>
+    </div>
+</footer>
+    
+</body>
+</html>

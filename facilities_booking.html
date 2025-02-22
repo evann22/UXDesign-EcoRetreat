@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+	<title>Facilities Booking</title>
+    <link rel="stylesheet" href="facilities_booking.css">
+    <link rel="stylesheet" href="navbar.css">
+
+</head>
+<body>
+    <section class="header">  
+        <nav>
+            <ul class="navlist">
+                <li><a href="homepage.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="Rooms.html" class="drop">Rooms<i class="arrow down"></i></a>
+                    <div class="dropdownmenu">                       
+                        <a href="Rooms.html">Room</a>                           
+                        <a href="RoomBooking.html">Rooms Bookings</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="facilities.html" class="drop">Facilities<i class="arrow down"></i></a>
+                    <div class="dropdownmenu">
+                        <a href="facilities.html">Facilities</a>
+                        <a href="facilities_booking.html">Facilities Bookings</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="foodbev.html" class="drop">Restaurant<i class="arrow down"></i></a>
+                    <div class="dropdownmenu">
+                        <a href="foodbev.html">Food and Beverages</a>
+                        <a href="restaurantreserve.html">Restaurant Reservation</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="eventreservation.html" class="drop">Events<i class="arrow down"></i></a>
+                    <div class="dropdownmenu">
+                        <a href="eventreservation.html">Events Reservation</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>   
+</section>
+    
+    
+	<form>
+    
+		<fieldset>
+            <label for="name"class="form">Full Name:</label>
+			<input class="form" type="text" id="name" name="name" placeholder="e.g. Lawrence Wong" required>
+            <br>
+            <br>
+            <label for="contact" class="form">Phone Number:</label>
+            <input class="form" type="text" id="contact" name="contact" placeholder="Phone Number" required>
+            <br>
+            <br>
+            <label for="email" class="form">Email:</label>
+            <input class="form" type="email" id="email" name="email" placeholder="e.g. lawrencewong1@gmail.com" required>
+			<br>
+            <br>
+			<p id="package">Choose your desired package:</p>
+            <select class="form" id="package" name="package">
+                <option value="swedish">Swedish Massage - 60mins</option>
+                <option value="swedish">Swedish Massage - 90mins</option>
+                <option value="deep-tissue">Deep Tissue Massage - 60mins</option>
+                <option value="deep-tissue">Deep Tissue Massage - 90mins</option>
+                <option value="aromatherapy">Aromatherapy Massage - 60mins</option>
+                <option value="aromatherapy">Aromatherapy Massage - 90mins</option>
+            </select>
+            <br>
+            <br>
+            <label for="date" class="form">Date of activity:</label>
+            <br>
+            <input class="form" type="date" id="date" name="date">
+            <br>
+            <br>
+            <p id="time">Time slot:</p>
+            <select class="form" id="time" name="time">
+                <option value="time">9am</option>
+                <option value="time">9.30am</option>
+                <option value="time">10am</option>
+                <option value="time">10.30am</option>
+                <option value="time">11am</option>
+                <option value="time">11.30am</option>
+                <option value="time">12pm</option>
+                <option value="time">12.30pm</option>
+                <option value="time">1pm</option>
+                <option value="time">1.30pm</option>
+                <option value="time">2pm</option>
+                <option value="time">2.30pm</option>
+                <option value="time">3pm</option>
+                <option value="time">3.30pm</option>
+                <option value="time">4pm</option>
+                <option value="time">4.30pm</option>
+                <option value="time">5pm</option>
+                <option value="time">5.30pm</option>
+                <option value="time">6pm</option>
+                <option value="time">6.30pm</option>
+                <option value="time">7pm</option>
+                <option value="time">7.30pm</option>
+                <option value="time">8pm</option>
+            </select>
+            <label for="comments" class="form">Comments:</label>
+            <br>
+            <textarea class="form" id="comments" name="comments" placeholder="Type any comments here..."></textarea>
+		</fieldset>
+		<input type="submit" id="submit" value="submit">
+	</form>
+ 
+    <footer class="erfooter">
+        <div class="container1">
+            <div class="row1">
+                <h3>EcoRetreat</h3>
+                <p>"Our vision is to create an unparalleled eco-friendly sanctuary in the Maldives,
+                     where luxury meets sustainability."</p>
+            </div>
+            <div class="line"><div>
+                <div class="copyright-container">
+                <p class="copyright-text">Copyright &copy; 
+                    2024 All Rights Reserved by EcoRetreat</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

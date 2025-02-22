@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRetreat - Restaurant Reservation</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f9f0;
+            color: #2c3e50;
+        }
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/restaurant.jpg');
+            color: white;
+            padding: 200px;
+            margin-left: 142px;
+            text-align: center;
+            width: 1200px;
+            font-size: large;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-weight: 900;
+        }
+        .container {
+            padding: 20px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            margin-left: 475px;
+            align-items: center;
+            
+        }
+        h2 {
+            border-bottom: 2px solid rgb(88,97,78);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        form h2{
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="number"], input[type="datetime-local"] , input[type="tel"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 200px;
+        }
+        .left {
+            float: left;
+            margin-right: 50px;
+        }
+        .center {
+            margin-left: 135px;
+        }
+        .submit-button {
+            background-color: rgb(88,97,78); /* Green background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 15px 32px; /* Some padding */
+            text-align: center; /* Center the text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Make the button inline element */
+            font-size: 16px; /* Increase font size */
+            margin: 4px 2px; /* Some margin */
+            cursor: pointer; /* Pointer/hand icon on hover */
+            border-radius: 8px; /* Rounded corners */
+        }
+
+        .submit-button:hover {
+            background-color: rgb(65, 72, 58); /* Darker green on hover */
+        }
+
+        .bu {
+            display: flex;
+            flex-direction: column;
+        }
+
+.erfooter {
+  background-color: rgb(87, 97, 78);
+  color: white;
+  position: relative;
+  clear: both;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.container1 {
+  padding: 45px 0 20px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.erfooter h3{
+  font-size: 24px;
+}
+
+.erfooter p{
+  font-size: 15px;
+}
+
+.line {
+    width: 60%;
+    height: 2px;
+    background-color:  white;
+    margin: 0 auto 10px;
+}
+
+.copyright-text {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.copyright-container {
+    padding-top: 1%;
+}
+
+.row1 {
+    margin-bottom: 1%;
+}
+
+.row1 h3 {
+    font-size: 50px;
+    margin-bottom: 1%;
+    text-align:  center;
+}
+
+.row1 p {
+    font-size: 18px;
+    text-align: center;
+}
+
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', (event) => {
+            var now = new Date();
+            now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
+            now.setSeconds(0);
+            now.setMilliseconds(0);
+
+            // Round down to the nearest half hour
+            var minutes = now.getMinutes();
+            if (minutes < 30) {
+                now.setMinutes(0);
+            } else {
+                now.setMinutes(30);
+            }
+
+            var datetime = now.toISOString().slice(0, 16);
+            document.getElementById('bookingDateTime').setAttribute('min', datetime);
+
+            document.getElementById('bookingForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var bookingDateTime = document.getElementById('bookingDateTime').value;
+        });
+        });
+    </script>
+</head>
+<body>
+<section class="header">  
+    <nav>
+        <ul class="navlist">
+            <li><a href="homepage.html">Home</a></li>
+            <li class="dropdown">
+                <a href="Rooms.html" class="drop">Rooms<i class="arrow down"></i></a>
+                <div class="dropdownmenu">                       
+                    <a href="Rooms.html">Room</a>                           
+                    <a href="RoomBooking.html">Rooms Bookings</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="facilities.html" class="drop">Facilities<i class="arrow down"></i></a>
+                <div class="dropdownmenu">
+                    <a href="facilities.html">Facilities</a>
+                    <a href="facilities_booking.html">Facilities Bookings</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="foodbev.html" class="drop">Restaurant<i class="arrow down"></i></a>
+                <div class="dropdownmenu">
+                    <a href="foodbev.html">Food and Beverages</a>
+                    <a href="restaurantreserve.html">Restaurant Reservation</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="eventreservation.html" class="drop">Events<i class="arrow down"></i></a>
+                <div class="dropdownmenu">
+                    <a href="eventreservation.html">Events Reservation</a>
+                </div>
+            </li>
+        </ul>
+    </nav>   
+</section>
+
+<header>
+    <h1>Restaurant Reservation</h1>
+</header>
+
+<div class="container">
+    <form action="rest_confirm.html" method="post">
+        <h2>Make a Reservation</h2>
+        <div class="left">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required="required">
+        </div>
+        
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" required>
+        
+        <div class="left">
+            <label for="email">Email</label>
+           <input type="email" id="email" name="email" required>
+        </div>
+        
+        <label for="people">Number of People</label>
+        <input type="number" id="people" name="people" min="1" max="8" required>
+        
+        <div class="center">
+            <label for="bookingDateTime">Booking Date and Time:</label>
+            <input type="datetime-local" id="bookingDateTime" class="datetime-input" step="1800">
+        </div>
+        <p style="font-size: 15.57px;">For special requests, contact ecoretreat@gmail.com or call +65 69696969</p>
+        <div class="bu">
+        <input type="submit" value="Submit" class="submit-button" href="rest_confirm.html">
+        </div>
+    </form>
+</div>
+ 
+<footer class="erfooter">
+    <div class="container1">
+        <div class="row1">
+            <h3>EcoRetreat</h3>
+            <p>"Our vision is to create an unparalleled eco-friendly sanctuary in the Maldives,
+                 where luxury meets sustainability."</p>
+        </div>
+        <div class="line"><div>
+            <div class="copyright-container">
+            <p class="copyright-text">Copyright &copy; 
+                2024 All Rights Reserved by EcoRetreat</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

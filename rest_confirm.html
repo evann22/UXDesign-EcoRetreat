@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRetreat - Restaurant Reservation</title>
+    <link rel="stylesheet" href="navbar.css">
+    <style>
+        *{
+            margin: 0%;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f9f0;
+            color: #2c3e50;
+        }
+        header {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/restaurant.jpg');
+            color: white;
+            padding: 200px;
+            margin-left: 142px;
+            text-align: center;
+            width: 1200px;
+            font-size: large;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-weight: 900;
+        }
+        .container {
+            padding: 20px;
+            margin-top: 30px;
+        }
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 500px;
+            margin-left: 475px;
+            align-items: center;
+            
+        }
+        h2 {
+            border-bottom: 2px solid rgb(88,97,78);
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            font-size: xx-large;
+        }
+        p {
+            font-size: x-large;
+        }
+        .confirmation-container {
+            text-align: center;
+        }
+
+        .submit-button:hover {
+            background-color: rgb(65, 72, 58); /* Darker green on hover */
+        }
+
+        .bu {
+            display: flex;
+            flex-direction: column;
+        }
+
+.erfooter {
+  background-color: rgb(87, 97, 78);
+  color: white;
+  position: relative;
+  clear: both;
+  height: 100%;
+  border: 1px solid black;
+}
+
+.container1 {
+  padding: 45px 0 20px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.erfooter h3{
+  font-size: 24px;
+}
+
+.erfooter p{
+  font-size: 15px;
+}
+
+.line {
+    width: 60%;
+    height: 2px;
+    background-color:  white;
+    margin: 0 auto 10px;
+}
+
+.copyright-text {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+.copyright-container {
+    padding-top: 1%;
+}
+
+.row1 {
+    margin-bottom: 1%;
+}
+
+.row1 h3 {
+    font-size: 50px;
+    margin-bottom: 1%;
+    text-align:  center;
+}
+
+.row1 p {
+    font-size: 18px;
+    text-align: center;
+}
+.browse {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    font-size: 30px;
+        }
+
+.browse a {
+    background: rgb(88, 97, 78);
+    border: 5px solid rgb(88, 97, 78);
+    border-radius: 15px;
+    color: white;
+    display: inline-block;
+    margin: 10px;
+    padding: 14px;
+    text-decoration: none;
+        }
+
+.browse a:hover {
+    background: white;
+    border: 5px solid rgb(88, 97, 78);
+    color: rgb(88, 97, 78);
+        }
+    </style>
+
+</head>
+<body>
+<section class="header">  
+    <nav>
+        <ul class="navlist">
+            <li><a href="homepage.html">Home</a></li>
+            <li class="dropdown">
+                <a href="Rooms.html" class="drop">Rooms<i class="arrow down"></i></a>
+                <div class="dropdownmenu">                       
+                    <a href="Rooms.html">Room</a>                           
+                    <a href="RoomBooking.html">Rooms Bookings</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="facilities.html" class="drop">Facilities<i class="arrow down"></i></a>
+                <div class="dropdownmenu">
+                    <a href="facilities.html">Facilities</a>
+                    <a href="facilities_booking.html">Facilities Bookings</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="foodbev.html" class="drop">Restaurant<i class="arrow down"></i></a>
+                <div class="dropdownmenu">
+                    <a href="foodbev.html">Food and Beverages</a>
+                    <a href="restaurantreserve.html">Restaurant Reservation</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="eventreservation.html" class="drop">Events<i class="arrow down"></i></a>
+                <div class="dropdownmenu">
+                    <a href="eventreservation.html">Events Reservation</a>
+                </div>
+            </li>
+        </ul>
+    </nav>   
+</section>
+
+<header>
+    <h1>Restaurant Reservation</h1>
+</header>
+
+<div class="container">
+        <div id="confirmation-container" class="confirmation-container">
+            <h2>Confirmation Page</h2>
+            <p>Your booking is confirmed!</p>
+        </div>
+        <div class="browse">
+            <a href="homepage.html">Continue Browsing</a>
+        </div>
+</div>
+ 
+<footer class="erfooter">
+    <div class="container1">
+        <div class="row1">
+            <h3>EcoRetreat</h3>
+            <p>"Our vision is to create an unparalleled eco-friendly sanctuary in the Maldives,
+                 where luxury meets sustainability."</p>
+        </div>
+        <div class="line"><div>
+            <div class="copyright-container">
+            <p class="copyright-text">Copyright &copy; 
+                2024 All Rights Reserved by EcoRetreat</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

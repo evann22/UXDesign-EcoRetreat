@@ -1,0 +1,401 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* NAVBAR */
+li,
+a,
+button {
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.navlinks li a {
+    transition: all 0.3s ease 0s;
+}
+
+.navlinks li a:hover {
+    color: #0088a9;
+}
+
+button {
+    padding: 9px 12px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgb(88, 97, 78);
+}
+
+.wtext {
+    color: white;
+}
+/* NAVBAR */
+
+/* IMAGE TEXT */
+.container {
+    position: relative;
+    text-align: center;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    color: white;
+    font-size: 75px;
+}
+
+.centeredbottom {
+    position: absolute;
+    top: 58%;
+    left: 43.757%;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+}
+
+.button {
+    position: absolute;
+    top: 65%;
+    left: 45.5%;
+    background-color: transparent;
+}
+/* IMAGE TEXT */
+
+/* VIDEO */
+.video-container {
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.videoSettings {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.videoTxt {
+    background-color: rgb(221, 214, 196);
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    margin: 0;
+    flex-grow: 1;
+    border: solid 10px rgb(88, 97, 78);
+}
+/* VIDEO */
+
+.welcome-container {
+    align-self: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* TEXT */
+.p1 {
+    text-align: center;
+    font-size: 30px;
+    background-color: transparent;
+    color: white;
+}
+
+.p2 {
+    text-align: left;
+    font-size: 30px;
+    background-color: transparent;
+    color: black;
+}
+
+.p3 {
+    text-align: left;
+    font-size: 17px;
+    background-color: transparent;
+    color: black;
+}
+
+.p4 {
+    font-size: 20px;
+}
+
+.p5 {
+    font-size: 35px;
+    font-weight: 300;
+}
+
+.p6 {
+    text-align: left;
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+}
+/* TEXT */
+
+/* DISCOVER */
+.discoverRoom {
+    display: flex;
+    padding-left: 150px;
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: lighter;
+    color: rgb(88, 97, 78);
+}
+
+.selectRoom {
+    display: flex;
+    padding-left: 150px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 35px;
+}
+/* DISCOVER */
+
+/* IMAGE STYLE */
+.image-container {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin-left: 150px;
+}
+
+.image-containerleft {
+    position: relative;
+    width: 600px;
+    height: 350px;
+    margin-left: 0px;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+.imagebord {
+    width: 100%;
+    height: 100%;
+    border: solid 10px rgb(88, 97, 78);
+    transition: 0.5s ease;
+    display: block;
+}
+
+.imagebordright {
+    width: 100%;
+    height: 100%;
+    border: solid 10px rgb(88, 97, 78);
+    transition: 0.5s ease;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.image-container:hover .imagebord .imagebordright {
+    opacity: 0.3;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.image-containerleft:hover .imagebord .imagebordright {
+    opacity: 0.3;
+}
+
+.image-containerleft:hover .overlay {
+    opacity: 1;
+}
+/* IMAGE STYLE */
+
+/* EXPLORE MORE */
+.amenities-container {
+    margin-top: 90px;
+    display: flex;
+    width: 50%;
+    height: 100%;
+}
+
+.image-amenities {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.imgTxt {
+    background-color: rgb(221, 214, 196);
+    width: 50%;
+    height: auto;
+    padding: 20px;
+    margin-top: 90px;
+    flex-grow: 1;
+    border: solid 10px rgb(88, 97, 78);
+}
+/* EXPLORE MORE */
+
+/* TEXT CONTAINER */
+.text-container {
+    color: black;
+    padding: 20px;
+    border-top: 8px solid rgb(88, 97, 78);
+    border-right: 8px solid rgb(88, 97, 78);
+    border-bottom: 8px solid rgb(88, 97, 78);
+    background-color: rgb(221, 214, 196);
+    width: 600px;
+    height: 330px;
+    margin-top: 10px;
+}
+
+.text-containerleft {
+    color: black;
+    padding: 20px;
+    border-top: 8px solid rgb(88, 97, 78);
+    border-left: 8px solid rgb(88, 97, 78);
+    border-bottom: 8px solid rgb(88, 97, 78);
+    background-color: rgb(221, 214, 196);
+    width: 600px;
+    height: 330px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
+/* TEXT CONTAINER */
+
+/* FOOTER */
+.erfooter {
+    background-color: rgb(87, 97, 78);
+    color: white;
+    position: relative;
+    clear: both;
+    height: 30vh;
+    margin-top: 5%;
+}
+
+.container1 {
+    padding: 45px 0 20px;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+
+.erfooter h3 {
+    font-size: 24px;
+}
+
+.erfooter p {
+    font-size: 15px;
+}
+
+.line {
+    width: 60%;
+    height: 2px;
+    background-color: white;
+    margin: 0 auto 10px;
+}
+
+.copyright-text {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+
+.copyright-container {
+    padding-top: 1%;
+}
+
+.row1 {
+    margin-bottom: 1%;
+}
+
+.row1 h3 {
+    font-size: 50px;
+    margin-bottom: 1%;
+    text-align: center;
+}
+
+.row1 p {
+    font-size: 18px;
+    text-align: center;
+}
+/* FOOTER */
+
+/* MEDIA QUERY */
+@media screen and (max-width: 756px) {
+    .flexbox {
+        flex-direction: column;
+    }
+
+    .video-container,
+    .videoTxt {
+        width: 100%;
+    }
+
+    .image-container,
+    .image-containerleft,
+    .text-container,
+    .text-containerleft {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .imagebord,
+    .imagebordright {
+        border-width: 5px;
+    }
+
+    .imgTxt,
+    .amenities-container {
+        width: 100%;
+    }
+}
